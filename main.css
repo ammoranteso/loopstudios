@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif; }
+
+html,
+body {
+  margin: 0;
+  padding: 0; }
+
+ul,
+li {
+  padding: 0;
+  list-style: none; }
+
+@font-face {
+  font-family: "Josefin Sans", sans-serif;
+  src: url(static/JosefinSans-ThinItalic.ttf); }
+.hlp__flex {
+  display: flex; }
+
+.container-cards {
+  flex-wrap: wrap; }
+
+.card {
+  position: relative; }
+
+.card-title {
+  position: absolute; }
+
+.btn__our {
+  text-decoration: none;
+  border: 1.5px solid black;
+  color: black;
+  background: none; }
+
+footer {
+  padding: 30px 0px;
+  background-color: black;
+  color: white;
+  text-align: center; }
+
+@media screen and (min-device-width: 320px) {
+  .container-main-view {
+    height: 100vh;
+    background-image: url(../assets/mobile/image-hero.jpg);
+    background-size: cover;
+    background-position: center; }
+
+  .container-nav-logo {
+    justify-content: space-between;
+    padding: 40px 25px; }
+
+  .icon-menu {
+    width: 33px;
+    height: 21px; }
+
+  .container-message__view {
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 112px); }
+
+  .box-message {
+    border: 2px solid white;
+    width: 309px;
+    height: 240px; }
+
+  .message__view {
+    letter-spacing: 2px;
+    padding: 38px 24px;
+    margin: 0;
+    color: white;
+    font-size: 35px;
+    font-weight: 300; }
+
+  .image-container__about {
+    justify-content: center; }
+
+  .image__about {
+    width: 80%;
+    margin: 80px 20px 20px 20px; }
+
+  .container-msg__about {
+    padding: 0 42px; }
+
+  .title-msg__about {
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-weight: 200;
+    font-size: 25px; }
+
+  .message__about {
+    margin: 0;
+    padding: 10px 0px;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: center;
+    color: #8c8c8c; }
+
+  .container-cards {
+    flex-direction: column;
+    padding: 25px; }
+
+  .earth-card {
+    width: 300px;
+    left: 10%;
+    top: 60%; }
+
+  .title__our {
+    margin-top: 50px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-size: 29px; }
+
+  .image-card {
+    width: 300px; }
+
+  .card {
+    margin: 10px; }
+
+  .card-title {
+    width: 100px;
+    left: 7%;
+    top: 40%;
+    letter-spacing: 0.5px;
+    font-size: 20px;
+    color: white; }
+
+  .container-button__our {
+    margin: 20px 0;
+    text-align: center; }
+
+  .btn__our {
+    width: 113px;
+    height: 34px;
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: bold; }
+
+  .footer-title {
+    font-size: 27px; }
+
+  .items {
+    margin: 20px auto; }
+
+  .container-social-nwt {
+    margin: 30px 0; }
+
+  .img-social-nwt {
+    margin: 5px; }
+
+  .copyright {
+    margin: 20px 0;
+    color: #8c8c8c; } }
+
+/*# sourceMappingURL=main.css.map */
