@@ -1,27 +1,8 @@
-* {
-  box-sizing: border-box;
-  font-family: "Josefin Sans", sans-serif;
-}
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
-
-ul,
-li {
-  padding: 0;
-  list-style: none;
-}
-
-@font-face {
-  font-family: "Josefin Sans", sans-serif;
-  src: url(static/JosefinSans-ThinItalic.ttf);
-}
-.hlp__flex {
-  display: flex;
-}
+//Custom imports
+@import "generics/base_generic.scss";
+@import "settings/base_settings.scss";
+@import "tools/base_tools.scss";
+@import "utilities/base_utilities.scss";
 
 .container-cards {
   flex-wrap: wrap;
@@ -48,15 +29,16 @@ footer {
   color: white;
   text-align: center;
 }
-
+// Mobile styles
 @media screen and (min-device-width: 320px) {
+  //** Section View
+
   .container-main-view {
     height: 100vh;
     background-image: url(../assets/mobile/image-hero.jpg);
     background-size: cover;
     background-position: center;
   }
-
   .container-nav-logo {
     justify-content: space-between;
     padding: 40px 25px;
@@ -74,7 +56,7 @@ footer {
   }
 
   .box-message {
-    border: 2px solid white;
+    border: 2px solid $whiteColor;
     width: 309px;
     height: 240px;
   }
@@ -83,10 +65,12 @@ footer {
     letter-spacing: 2px;
     padding: 38px 24px;
     margin: 0;
-    color: white;
+    color: $whiteColor;
     font-size: 35px;
     font-weight: 300;
   }
+
+  //** Section About
 
   .image-container__about {
     justify-content: center;
@@ -114,14 +98,15 @@ footer {
     font-size: 15px;
     line-height: 30px;
     text-align: center;
-    color: #8c8c8c;
+    color: $darkGray;
   }
+
+  //** Section Our
 
   .container-cards {
     flex-direction: column;
     padding: 25px;
   }
-
   .earth-card {
     width: 300px;
     left: 10%;
@@ -150,7 +135,7 @@ footer {
     top: 40%;
     letter-spacing: 0.5px;
     font-size: 20px;
-    color: white;
+    color: $whiteColor;
   }
 
   .container-button__our {
@@ -166,6 +151,7 @@ footer {
     font-weight: bold;
   }
 
+  //Footer
   .footer-title {
     font-size: 27px;
   }
@@ -184,8 +170,10 @@ footer {
 
   .copyright {
     margin: 20px 0;
-    color: #8c8c8c;
+    color: $darkGray;
   }
 }
 
-/*# sourceMappingURL=main.css.map */
+// Desktop styles
+@media screen and (min-width: 1440px) {
+}
